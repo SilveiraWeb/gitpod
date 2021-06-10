@@ -15,6 +15,6 @@ export const PageTitleStyled = styled('h2')`
         font-size: ${({theme}) => theme.typography.body1.fontSize};
     }
 `;
-export const PageSubtitleStyled = styled('')`
+export const PageSubtitleStyled = styled('div')`
 
 `;
