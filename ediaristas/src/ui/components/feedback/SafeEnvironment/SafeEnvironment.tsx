@@ -9,6 +9,6 @@ const SafeEnvironment = () => {
                 Ambiente seguro
             </Container>
         </SafeEnvironmentContainer>
-    )
+    );
 }
 export default SafeEnvironment;

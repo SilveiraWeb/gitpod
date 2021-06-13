@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-      "baseUrl": "src",
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",
@@ -19,8 +19,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-        "@styles/*":"ui/styles/*"
-    }
+        "@styles/*":["ui/styles/*"]
+    },
   },
   "include": [
     "next-env.d.ts",
