@@ -1,6 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
-import "@styles/globals.css";
+
 import SafeEnvironment from "ui/components/feedback/SafeEnvironment/SafeEnvironment";
 import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
 
