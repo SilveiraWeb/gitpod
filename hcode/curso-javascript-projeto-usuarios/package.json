@@ -1,0 +1,22 @@
+{
+  "name": "curso-javascript-projeto-usuarios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcodebr/curso-javascript-projeto-usuarios.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcodebr/curso-javascript-projeto-usuarios/issues"
+  },
+  "homepage": "https://github.com/hcodebr/curso-javascript-projeto-usuarios#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
