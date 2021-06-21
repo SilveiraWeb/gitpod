@@ -1,0 +1,111 @@
+@charset "utf-8";
+/*Poppins Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@500;700&display=swap');
+/* Open Sans Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+/* reset css*/
+*{
+    padding:0; 
+    margin: 0; 
+    border: none; 
+    text-decoration: none; 
+    box-sizing: border-box;
+}
+html{
+    /* main colors */
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+    /* gray */
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-medium: #D3D9E2;
+    --grey-light: #E5EAF1;
+    /* hover */
+    --hover-blue: #5699FF;
+    --hover-red: #EA4B65;
+    --hover-gray: #8794A7;
+
+    /* font size 1rem = 16px (User-Agent) = 100% (User-Agent) */
+    /* regra de 3 calculo de porcentagem
+        16px = 100%
+        10px = x%
+        16x = 100 * 10
+        16x = 1000
+        x = 1000 / 16
+        x = 62.5% = 10px (User-Agent)
+        font-size: 2.8rem; = 28px / 10px
+        */
+    font-size: 62.5%; /* = 10px */
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--background);
+}
+body, button, input, textarea{
+    font-size: clamp(14px, 1.6rem, 2vw);/* clamp() = intervalo de tamanho*/
+    font-family: 'Open Sans', sans-serif;
+}
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+.content header{
+    width: 80%;
+    margin: 3.5rem  auto;
+}
+.content header img{
+    width: 16.7rem;
+}
+/* input and buttons */
+input, button, .button{
+    height: 5rem;
+    border-radius: .8rem;
+}
+button, .button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: filter .2s;
+}
+button:hover, .button:hover{
+    filter: brightness(1.2)
+}
+button > img, .button > img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+button.outlined, .button.outlined{
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+    
+
