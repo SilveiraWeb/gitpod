@@ -1,20 +1,13 @@
 // caso apareca os '...' no nome do modulo sera
 // necessario instalar a biblioteca de tipagem "@types/express"
-import express from "express";
 import "reflect-metadata";
+import express from "express";
 import "./database"; // import connection
+import {router} from  "./routes";
 
-
-//@types/express
 const app = express();
-
-app.get("/test", (req, res) => {
-  return res.send("Hello NLW");
-});
-
-app.post("/test-post", (req, res) => {
-  return res.send("Ola NLW test-post");
-});
+app.use(express.json())
+app.use(router);
 
 app.listen(3000, () => {
   console.log("Server is running...");

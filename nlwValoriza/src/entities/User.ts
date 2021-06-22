@@ -12,17 +12,17 @@ class User {
   @Column()
   admin: boolean;
   @CreateDateColumn()
-  crated_at: Date;
+  created_at: Date;
   @UpdateDateColumn()
   updated_at: Date;
 
-  constructor(){
-      if(!this.id){
-          this.id = uuid();
-      }
+  constructor() {
+    if (!this.id) {
+      this.id = uuid();
+    }
   }
 }
 
 export { User }
 
-//  Entidade < = > ORM < = > table(users)
+// Entidade < = > ORM < = > table(users)
