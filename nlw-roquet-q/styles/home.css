@@ -17,9 +17,10 @@ main {
   grid-area: right;
   display: flex;
   align-items: center;
+  margin-top: -12rem;
 }
 main.container {
-  width: min(36.3rem 100%);
+  width: min(36.3rem, 100%);
 }
 main h2 {
   font-family: "Poppins", sans-serif;
