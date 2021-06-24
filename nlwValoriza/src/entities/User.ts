@@ -1,4 +1,10 @@
-import {Entity,  PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn} from "typeorm";
+import {
+  Entity,
+  PrimaryColumn,
+  Column,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from "typeorm";
 import { v4 as uuid } from "uuid";
 
 @Entity("users")
@@ -11,6 +17,8 @@ class User {
   email: string;
   @Column()
   admin: boolean;
+  @Column()
+  password: string;
   @CreateDateColumn()
   created_at: Date;
   @UpdateDateColumn()
@@ -23,6 +31,6 @@ class User {
   }
 }
 
-export { User }
+export { User };
 
 // Entidade < = > ORM < = > table(users)
