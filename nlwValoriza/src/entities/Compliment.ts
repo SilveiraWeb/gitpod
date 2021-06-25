@@ -2,6 +2,7 @@ import { Entity,PrimaryColumn, Column, UpdateDateColumn, CreateDateColumn, JoinC
 import { v4 as uuid } from "uuid";
 import { Tag } from "./Tag";
 import { User } from "./User";
+
 @Entity("compliments")
 class Compliments{
     @PrimaryColumn()
