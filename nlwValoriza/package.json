@@ -1,7 +1,7 @@
 {
-  "name": "nlwValoriza",
+  "name": "nlw-valoriza",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev src/server.ts",

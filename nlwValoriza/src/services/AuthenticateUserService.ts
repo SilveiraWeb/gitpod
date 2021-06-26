@@ -25,7 +25,7 @@ class AuthenticateUserService {
         // gerar token
         const token = sign({
             email: user.email
-        }, "tokenDeveSerGeradoComMD5Generator", {
+        }, "7d6425f0263d7ecc61438a378ea84d68", {
             subject: user.id,
             expiresIn: "1d"
         });
