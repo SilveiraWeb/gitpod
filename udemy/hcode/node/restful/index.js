@@ -1,9 +1,14 @@
 const express = require('express');
 const consign = require('consign');
+const bodyParser = require('body-parser');
 
 const app = express();
 
-consign().include('routes').into(app)
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
+// chamando rotas com consign
+consign().include("routes").include("utils").into(app);
 //const routerIndex = require('./routes/index');
 //const routerUsers = require('./routes/users');
 //app.use(routerIndex);
